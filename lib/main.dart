@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(App());
+void main() => runApp(const App());
 
 class App extends StatelessWidget {
   const App({super.key});
@@ -16,7 +16,11 @@ class App extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
-                children: [Text("this is app"), Icon(Icons.av_timer_sharp)],
+                children: [
+                  Text("this is app"),
+                  Icon(Icons.av_timer_sharp),
+                  Image.asset("images/image.jpg")
+                ],
               ),
             )));
   }
